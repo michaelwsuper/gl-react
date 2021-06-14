@@ -1,0 +1,30 @@
+{
+  "name": "gl-react-tests",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "./test.sh"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "26.6.3",
+    "eslint": "^7.16.0",
+    "eslint-plugin-react": "^7.21.5",
+    "flow-copy-source": "^2.0.9"
+  },
+  "version": "5.0.0",
+  "dependencies": {
+    "gl-react": "^5.0.0",
+    "gl-react-headless": "^5.0.0",
+    "gl-texture2d": "^2.0.12",
+    "jest": "26.6.3",
+    "jest-cli": "26.6.3",
+    "ndarray": "^1.0.19",
+    "promise-defer": "^1.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-test-renderer": "^17.0.1",
+    "webgltexture-loader": "1.0.0",
+    "webgltexture-loader-ndarray": "1.1.1"
+  }
+}

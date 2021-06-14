@@ -1,0 +1,6 @@
+alpha
+overlap
+overlapalpha
+orientation
+many
+resizing

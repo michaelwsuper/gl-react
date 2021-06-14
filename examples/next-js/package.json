@@ -1,0 +1,19 @@
+{
+  "name": "next-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "gl-react": "4.1.0",
+    "gl-react-dom": "4.1.0",
+    "next": "9.3.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  }
+}

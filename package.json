@@ -1,0 +1,33 @@
+{
+  "name": "gl-react-dev",
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "node -e \"if (process.env.npm_execpath.indexOf('yarn') === -1) { console.log('\u001b[31mPlease use yarn\u001b[0m'); process.exit(1); }\"",
+    "build": "./scripts/build.sh",
+    "watch": "./scripts/watch.sh",
+    "prettier": "prettier --write 'packages/{gl-react,gl-react-dom,gl-react-expo,gl-react-headless,gl-react-native}/src/*.js'",
+    "test": "cd packages/tests && yarn test",
+    "test-rewrite-snapshots": "cd packages/tests && yarn test -- -u",
+    "clean": "rm -rf node_modules packages/*/node_modules/ packages/*/lib",
+    "publish": "yarn && lerna run clean && yarn build && lerna publish --registry=https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-flow": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "browserify": "^17.0.0",
+    "browserify-shim": "^3.8.12",
+    "documentation": "13.2.0",
+    "flow-copy-source": "^2.0.9",
+    "lerna": "^3.22.1",
+    "prettier": "^2.2.1"
+  }
+}
